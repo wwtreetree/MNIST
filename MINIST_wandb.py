@@ -71,6 +71,9 @@ def main():
     parser.add_argument(
         "--epochs", type=int, default=5, help="Epochs to train."
     )
+
+
+
     args = parser.parse_args()
     config_dict={"epochs": args.epochs,
         "lr": args.lr}
@@ -78,7 +81,7 @@ def main():
 
     print(config)
     wandb.init(
-        project="shu3",
+        project="shu1",
         config = config_dict,
         name=f"lr = {args.lr}"
         )
