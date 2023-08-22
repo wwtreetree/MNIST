@@ -78,7 +78,7 @@ def main():
 
     print(config)
     wandb.init(
-        project="shu2",
+        project="shu3",
         config = config_dict,
         name=f"lr = {args.lr}"
         )
