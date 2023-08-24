@@ -68,11 +68,10 @@ def main():
     parser.add_argument(
         "--lr", type=float, default=0.1, help="Learning rate."
     )
+    
     parser.add_argument(
         "--epochs", type=int, default=5, help="Epochs to train."
     )
-
-
 
     args = parser.parse_args()
     config_dict={"epochs": args.epochs,
