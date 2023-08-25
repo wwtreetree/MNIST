@@ -1,2 +1,9 @@
-/mnist_env
+# ignore the virtual environment
+mnist_env/
+
+# ignore files
 .DS_Store
+jobs.txt
+# compute canada
+*.sh
+*.out
