@@ -32,7 +32,7 @@ def submit(command, jobname, machine=None):
         f.write(msg)
     sleep(1)
 
-base = "/home/shuwang/scratch/jupyternote"
+base = "/home/shuwang/scratch/jupyternote/mnist_project"
 for lr in [0.01, 0.02, 0.05, 0.1]:
     for epoch in [4,5,6]:
         for activation in ["sigmoid","tanh", "relu"]:
