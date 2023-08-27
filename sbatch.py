@@ -38,5 +38,5 @@ for lr in [0.01, 0.02, 0.05, 0.1]:
         for activation in ["sigmoid","tanh", "relu"]:
             for optimizer in ["SGD", "Adam"]:
                 command = f"python3 {base}/MNIST_wandb.py --lr={lr} --epoch={epoch} --activation={activation} --optimizer={optimizer}"
-                submit(command, jobname=f"lr_{lr}")
+                submit(command, jobname=f"lr_{lr}, epoch_{epoch}, activation_{activation}, optimizer_{optimizer}")
 
